@@ -7,20 +7,39 @@ body {
    background-size: cover;
    background-repeat: no-repeat;
    background-color: black;
-
 }
 
 .gameboard-img img{
+    border:2px solid blue;
     margin-top: 10%;
     margin-left: 18%;
     margin-right: auto;
     width: 50%;
 }
-.circles div {
-    width: 300px;
+
+.circles {
+    border:2px solid red;
+    position:relative;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 10px;
-    margin-left:22%;
-
+    margin-top: -130px;
+    margin-left: 20%;
+   
 }
+
+
+/* .circles > circle > img  {
+    border: 2px solid purple;
+    position: absolute;
+    margin-top: -500px;
+    margin-bottom: 500px;
+    margin-left:22%; 
+
+} */
+
+
+
+
+
+
+
