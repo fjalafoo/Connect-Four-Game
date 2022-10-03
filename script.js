@@ -4,6 +4,7 @@ let gameboard = document.querySelector('.circles')
 
 let myarr = []
 
+// updateToken()
 
 
 
@@ -11,12 +12,16 @@ gameboard.addEventListener('click', handleClick)
 
 function handleClick(event){
     console.log(event.target.id)
-    let img1 = document.getElementById("1")
-    if(event.target.id==1){
-        img1.src=('circlered.svg')
 
-    }
-    
+    let i = event.target.id
+    let token=document.getElementById(i)
+    token.src=('circlered.svg')
+
+    // let img1 = document.getElementById("1")
+    // if(event.target.id==1){
+    //     img1.src=('circlered.svg')
+    // }
+  
 }
 
 
@@ -75,10 +80,25 @@ const winningCombos=[
 
 
 
+//Changing the token
 
+function updateToken(event){
+    // for(let i=1; i<43; i++){
+    //     let img=document.getElementById(i)
+       
+    // }
 
+   
 
+}
 
+/**
+make player turn, then make two types of images one for player 1 and one for player 2, 
+then a function to check first empty circle in the column
+
+if the event.target.id was 1,8,15, 22, 29, 36 => then we will check if 36 is filled or not, if it is filled
+it will go to the one above it, if it is empty it will insert the token of the current player
+ */
 
 
 
