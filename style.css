@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     background-image: url('zvGXkU.jpg');
    background-size: cover;
@@ -6,12 +10,17 @@ body {
 
 }
 
-.gameboard-img {
-    display: block;
+.gameboard-img img{
     margin-top: 10%;
-    margin-left: 15%;
+    margin-left: 18%;
     margin-right: auto;
     width: 50%;
-
+}
+.circles div {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left:22%;
 
 }
