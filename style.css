@@ -28,27 +28,13 @@ body {
    
 }
 
-.circle > img {
+.circles > img {
     margin:0;
-    padding: 0px;
+    padding:0 7px 0 7px;
     width: 70px;
     height:70px;
 }
 
-.circle {
-    padding:0 7px 0 7px;
-    width: 70px;
-    height: 70px;
-}
-
-/* .circles > circle > img  {
-    border: 2px solid purple;
-    position: absolute;
-    margin-top: -500px;
-    margin-bottom: 500px;
-    margin-left:22%; 
-
-} */
 
 
 
