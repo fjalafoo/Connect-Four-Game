@@ -105,6 +105,12 @@ it will go to the one above it, if it is empty it will insert the token of the c
 
 
 
+//start game function
+
+//restart function
+
+//player turn function
+
 
 
 
