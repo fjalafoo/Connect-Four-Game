@@ -2,27 +2,55 @@
 //making a board and all circles clickable
 let gameboard = document.querySelector('.circles')
 
-let myarr = []
-
-
-// updateToken()
-
-
-
+ 
 gameboard.addEventListener('click', handleClick)
 
+let p1 = 'p1'
+let p2 = 'p2'
+let currentPlayer = p1
+
 function handleClick(event){
-    console.log(event.target.id)
+    // console.log(event.target.id)
+    // console.log(event.target)
+   //let i = event.target.id
+    let token=document.getElementById(event.target.id)
+    // token.src=('p1.svg')
+   
+    if(currentPlayer==p1){
+        token.src=('p1.svg')
+        currentPlayer=p2
+        
+    }
+    else {
+        token.src=('p2.svg')
+        currentPlayer=p1
+    }
 
-    let i = event.target.id
-    let token=document.getElementById(i)
-    token.src=('circlered.svg')
+    console.log(currentPlayer)
 
-    // let img1 = document.getElementById("1")
-    // if(event.target.id==1){
-    //     img1.src=('circlered.svg')
-    // }
-  
+    // let i = event.target.id
+    // let token=document.getElementById(i)
+    // token.src=('p1.svg')
+
+    // token.src=('p2.svg')
+
+
+
+    for(let j=0; j<42; j++){
+        //we have 42 circles, so 42 turns, will switch between them using for-loop
+        
+        // if(j%2==0){
+        //     token.src=('p1.svg')
+        //     console.log(j%2)
+            
+        // }
+        // else if(j%2!=0) {
+        //     token.src=('p2.svg')
+        //     console.log(j%2)
+           
+        // }
+    }
+ 
 }
 
 
@@ -106,12 +134,19 @@ const winningCombos=[
 
 //Changing the token
 
-function updateToken(event){
-    // for(let i=1; i<43; i++){
-    //     let img=document.getElementById(i)
-       
-    // }
+function updateToken1(event){
 
+    let i = event.target.id
+    let token=document.getElementById(i)
+    token.src=('p1.svg')
+   
+
+}
+
+function updateToken2(event){
+    let i = event.target.id
+    let token=document.getElementById(i)
+    token.src=('p2.svg')
    
 
 }
@@ -129,18 +164,8 @@ it will go to the one above it, if it is empty it will insert the token of the c
 
 
 
+
 //start game function
 
 //restart function
-
-//player turn function
-
-
-
-
-
-
-
-
-
 
