@@ -9,49 +9,89 @@ let p1 = 'p1'
 let p2 = 'p2'
 let currentPlayer = p1
 
+//defining each img as row column using r#c#
+
+//first column
+let r1c1=document.getElementById('1')
+let r2c1=document.getElementById('8')
+let r3c1=document.getElementById('15')
+let r4c1=document.getElementById('22')
+let r5c1=document.getElementById('29')
+let r6c1=document.getElementById('36')
+
+//second column
+let r1c2=document.getElementById('2')
+let r2c2=document.getElementById('9')
+let r3c2=document.getElementById('16')
+let r4c2=document.getElementById('23')
+let r5c2=document.getElementById('30')
+let r6c2=document.getElementById('37')
+
+//third column
+let r1c3=document.getElementById('3')
+let r2c3=document.getElementById('10')
+let r3c3=document.getElementById('17')
+let r4c3=document.getElementById('24')
+let r5c3=document.getElementById('31')
+let r6c3=document.getElementById('38')
+
+//fourth column
+let r1c4=document.getElementById('4')
+let r2c4=document.getElementById('11')
+let r3c4=document.getElementById('18')
+let r4c4=document.getElementById('25')
+let r5c4=document.getElementById('32')
+let r6c4=document.getElementById('39')
+
+//fifth column
+let r1c5=document.getElementById('5')
+let r2c5=document.getElementById('12')
+let r3c5=document.getElementById('19')
+let r4c5=document.getElementById('26')
+let r5c5=document.getElementById('33')
+let r6c5=document.getElementById('40')
+
+//sixth column
+let r1c6=document.getElementById('6')
+let r2c6=document.getElementById('13')
+let r3c6=document.getElementById('20')
+let r4c6=document.getElementById('27')
+let r5c6=document.getElementById('34')
+let r6c6=document.getElementById('41')
+
+//seventh column
+let r1c7=document.getElementById('7')
+let r2c7=document.getElementById('14')
+let r3c7=document.getElementById('21')
+let r4c7=document.getElementById('28')
+let r5c7=document.getElementById('35')
+let r6c7=document.getElementById('42')
+
 function handleClick(event){
-    // console.log(event.target.id)
-    // console.log(event.target)
-   //let i = event.target.id
-    let token=document.getElementById(event.target.id)
-    // token.src=('p1.svg')
+    
+    
+    let id=Number(event.target.id)
+    //let token=document.getElementById(event.target.id)
+    
    
     if(currentPlayer==p1){
-        token.src=('p1.svg')
-        currentPlayer=p2
+        // token.src=('p1.svg')
+       updateToken1(id)
+       currentPlayer=p2
+     
+        //currentPlayer=p2
+
         
     }
     else {
-        token.src=('p2.svg')
+        updateToken2(id)
         currentPlayer=p1
     }
 
-    console.log(currentPlayer)
-
-    // let i = event.target.id
-    // let token=document.getElementById(i)
-    // token.src=('p1.svg')
-
-    // token.src=('p2.svg')
-
-
-
-    for(let j=0; j<42; j++){
-        //we have 42 circles, so 42 turns, will switch between them using for-loop
-        
-        // if(j%2==0){
-        //     token.src=('p1.svg')
-        //     console.log(j%2)
-            
-        // }
-        // else if(j%2!=0) {
-        //     token.src=('p2.svg')
-        //     console.log(j%2)
-           
-        // }
+    console.log(id)
     }
- 
-}
+
+   
 
 
 //create const for winning combos
@@ -134,21 +174,65 @@ const winningCombos=[
 
 //Changing the token
 
-function updateToken1(event){
+function updateToken1(id){
 
-    let i = event.target.id
-    let token=document.getElementById(i)
-    token.src=('p1.svg')
-   
+    for(let i=1; i<43; i++){
+        
+            if(id==1 || id==8 || id==15 || id==22 || id==29 || id==36){
+        
+                if(r1c1.src='empty.svg'){
+                    r1c1.src=('p1.svg')
+                }
+                else if(r2c1.src='empty.svg'){
+                    r2c1.src=('p1.svg')
+                }
+                else if(r3c1.src='empty.svg'){
+                    r3c1.src=('p1.svg')
+                }
+                else if(r4c1.src='empty.svg'){
+                    r4c1.src=('p1.svg')
+                }
+                else if(r5c1.src='empty.svg'){
+                    r5c1.src=('p1.svg')
+                }
+                else {
+                    r6c1.src=('p1.svg')
+                }
+        
+        
+    }
+ 
+    
+
+    }
 
 }
 
-function updateToken2(event){
-    let i = event.target.id
-    let token=document.getElementById(i)
-    token.src=('p2.svg')
+function updateToken2(id){
+    
+    if(id==1 || id==8 || id==15 || id==22 || id==29 || id==36){
+        
+        if(r1c1.src='empty.svg'){
+            r1c1.src=('p2.svg')
+        }
+        else if(r2c1.src='empty.svg'){
+            r2c1.src=('p2.svg')
+        }
+        else if(r3c1.src='empty.svg'){
+            r3c1.src=('p2.svg')
+        }
+        else if(r4c1.src='empty.svg'){
+            r4c1.src=('p2.svg')
+        }
+        else if(r5c1.src='empty.svg'){
+            r5c1.src=('p2.svg')
+        }
+        else {
+            r6c1.src=('p2.svg')
+        }
    
 
+}
 }
 
 /**
@@ -157,15 +241,4 @@ then a function to check first empty circle in the column
 
 if the event.target.id was 1,8,15, 22, 29, 36 => then we will check if 36 is filled or not, if it is filled
 it will go to the one above it, if it is empty it will insert the token of the current player
- */
-
-
-
-
-
-
-
-//start game function
-
-//restart function
-
+ *///
