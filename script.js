@@ -2,15 +2,25 @@
 //making a board and all circles clickable
 let gameboard = document.querySelector('.circles')
 
- 
 gameboard.addEventListener('click', handleClick)
 
 let p1 = 'p1'
 let p2 = 'p2'
 let currentPlayer = p1
 
+let winArr=[]
+
+let takenArr=[" "," ", " ", " ", " ", " ", " ",
+" "," ", " ", " ", " ", " ", " ",
+" "," ", " ", " ", " ", " ", " ",
+" "," ", " ", " ", " ", " ", " ",
+" "," ", " ", " ", " ", " ", " ",
+" "," ", " ", " ", " ", " ", " "]
+
+
 //defining each img as row column using r#c#
 
+//nested forloop rows and columns
 //first column
 let r1c1=document.getElementById('1')
 let r2c1=document.getElementById('8')
@@ -70,7 +80,7 @@ let r6c7=document.getElementById('42')
 function handleClick(event){
     
     
-    let id=Number(event.target.id)
+    let id=(event.target.id)
     //let token=document.getElementById(event.target.id)
     
    
@@ -175,28 +185,43 @@ const winningCombos=[
 //Changing the token
 
 function updateToken1(id){
+    let col1=['1','8','15','22','29','36']
+    let col2=[2,9,16,23,30,37]
+    let col3=[3,10,17,24,31,38]
+    let col4=[4,11,18,25,32,39]
+    let col5=[5,12,19,26,33,40]
+    let col6=[6,13,20,27,34,41]
+    let col7=[7,14,21,28,35,42]
+
+    console.log(takenArr)
 
     for(let i=1; i<43; i++){
         
-            if(id==1 || id==8 || id==15 || id==22 || id==29 || id==36){
+            if(col1.includes(id)){
         
-                if(r1c1.src='empty.svg'){
+                if(takenArr[0]===" "){
                     r1c1.src=('p1.svg')
+                    takenArr[0]="player1"
                 }
-                else if(r2c1.src='empty.svg'){
+                else if(takenArr[7]===" "){
                     r2c1.src=('p1.svg')
+                    takenArr[7]="player1"
                 }
-                else if(r3c1.src='empty.svg'){
+                else if(takenArr[14]===" "){
                     r3c1.src=('p1.svg')
+                    takenArr[14]="player1"
                 }
-                else if(r4c1.src='empty.svg'){
+                else if(takenArr[21]===" "){
                     r4c1.src=('p1.svg')
+                    takenArr[21]="player1"
                 }
-                else if(r5c1.src='empty.svg'){
+                else if(takenArr[28]===" "){
                     r5c1.src=('p1.svg')
+                    takenArr[28]="player1"
                 }
-                else {
+                else if(takenArr[36]===" ") {
                     r6c1.src=('p1.svg')
+                    takenArr[36]="player1"
                 }
         
         
@@ -206,34 +231,63 @@ function updateToken1(id){
 
     }
 
+    console.log(takenArr)
+
 }
 
 function updateToken2(id){
     
-    if(id==1 || id==8 || id==15 || id==22 || id==29 || id==36){
+    let col1=['1','8','15','22','29','36']
+    let col2=[2,9,16,23,30,37]
+    let col3=[3,10,17,24,31,38]
+    let col4=[4,11,18,25,32,39]
+    let col5=[5,12,19,26,33,40]
+    let col6=[6,13,20,27,34,41]
+    let col7=[7,14,21,28,35,42]
+
+    console.log(takenArr)
+
+    for(let i=1; i<43; i++){
         
-        if(r1c1.src='empty.svg'){
-            r1c1.src=('p2.svg')
-        }
-        else if(r2c1.src='empty.svg'){
-            r2c1.src=('p2.svg')
-        }
-        else if(r3c1.src='empty.svg'){
-            r3c1.src=('p2.svg')
-        }
-        else if(r4c1.src='empty.svg'){
-            r4c1.src=('p2.svg')
-        }
-        else if(r5c1.src='empty.svg'){
-            r5c1.src=('p2.svg')
-        }
-        else {
-            r6c1.src=('p2.svg')
-        }
-   
+            if(col1.includes(id)){
+        
+                if(takenArr[0]===" "){
+                    r1c1.src=('p1.svg')
+                    takenArr[0]="player1"
+                }
+                else if(!takenArr[7]===" "){
+                    r2c1.src=('p1.svg')
+                    takenArr[7]="player1"
+                }
+                else if(!takenArr[14]===" "){
+                    r3c1.src=('p1.svg')
+                    takenArr[14]="player1"
+                }
+                else if(!takenArr[21]===" "){
+                    r4c1.src=('p1.svg')
+                    takenArr[21]="player1"
+                }
+                else if(!takenArr[28]===" "){
+                    r5c1.src=('p1.svg')
+                    takenArr[28]="player1"
+                }
+                else {
+                    r6c1.src=('p1.svg')
+                    takenArr[36]="player1"
+                }
+        
+        
+    }
+ 
+    
+
+    }
+
+    console.log(takenArr)
+
 
 }
-}
+
 
 /**
 make player turn, then make two types of images one for player 1 and one for player 2, 
@@ -242,3 +296,6 @@ then a function to check first empty circle in the column
 if the event.target.id was 1,8,15, 22, 29, 36 => then we will check if 36 is filled or not, if it is filled
 it will go to the one above it, if it is empty it will insert the token of the current player
  *///
+
+
+ 

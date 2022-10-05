@@ -36,6 +36,15 @@ body {
 }
 
 
+.player-one {
+    background-image: url('./p1.svg')
+}
+
+.player-two {
+    background-image: url('./p2.svg')
+}
+
+
 
 
 
