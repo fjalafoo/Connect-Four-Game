@@ -10,12 +10,12 @@ let currentPlayer = p1
 
 let winArr=[]
 
-let takenArr=[" "," ", " ", " ", " ", " ", " ",
-" "," ", " ", " ", " ", " ", " ",
-" "," ", " ", " ", " ", " ", " ",
-" "," ", " ", " ", " ", " ", " ",
-" "," ", " ", " ", " ", " ", " ",
-" "," ", " ", " ", " ", " ", " "]
+let takenArr=["","","","","","","",
+"","","","","","","",
+"","","","","","","",
+"","","","","","","",
+"","","","","","","",
+"","","","","","",""]
 
 
 //defining each img as row column using r#c#
@@ -85,20 +85,16 @@ function handleClick(event){
     
    
     if(currentPlayer==p1){
-        // token.src=('p1.svg')
+      
        updateToken1(id)
        currentPlayer=p2
-     
-        //currentPlayer=p2
-
-        
     }
     else {
         updateToken2(id)
         currentPlayer=p1
     }
 
-    console.log(id)
+    // console.log(id)
     }
 
    
@@ -186,116 +182,467 @@ const winningCombos=[
 
 function updateToken1(id){
     let col1=['1','8','15','22','29','36']
-    let col2=[2,9,16,23,30,37]
-    let col3=[3,10,17,24,31,38]
-    let col4=[4,11,18,25,32,39]
-    let col5=[5,12,19,26,33,40]
-    let col6=[6,13,20,27,34,41]
-    let col7=[7,14,21,28,35,42]
+    let col2=['2','9','16','23','30','37']
+    let col3=['3','10','17','24','31','38']
+    let col4=['4','11','18','25','32','39']
+    let col5=['5','12','19','26','33','40']
+    let col6=['6','13','20','27','34','41']
+    let col7=['7','14','21','28','35','42']
 
-    console.log(takenArr)
+    // console.log(takenArr)
 
-    for(let i=1; i<43; i++){
+   
         
             if(col1.includes(id)){
         
-                if(takenArr[0]===" "){
+                if(takenArr[0]===""){
                     r1c1.src=('p1.svg')
                     takenArr[0]="player1"
+                    
                 }
-                else if(takenArr[7]===" "){
+                else if(takenArr[7]===""){
                     r2c1.src=('p1.svg')
                     takenArr[7]="player1"
                 }
-                else if(takenArr[14]===" "){
+                else if(takenArr[14]===""){
                     r3c1.src=('p1.svg')
                     takenArr[14]="player1"
                 }
-                else if(takenArr[21]===" "){
+                else if(takenArr[21]===""){
                     r4c1.src=('p1.svg')
                     takenArr[21]="player1"
                 }
-                else if(takenArr[28]===" "){
+                else if(takenArr[28]===""){
                     r5c1.src=('p1.svg')
                     takenArr[28]="player1"
                 }
-                else if(takenArr[36]===" ") {
+                else if(takenArr[35]==="") {
                     r6c1.src=('p1.svg')
+                    takenArr[35]="player1"
+                }
+        
+        
+             }
+
+             if(col2.includes(id)){
+        
+                if(takenArr[1]===""){
+                    r1c2.src=('p1.svg')
+                    takenArr[1]="player1"
+                    
+                }
+                else if(takenArr[8]===""){
+                    r2c2.src=('p1.svg')
+                    takenArr[8]="player1"
+                }
+                else if(takenArr[15]===""){
+                    r3c2.src=('p1.svg')
+                    takenArr[15]="player1"
+                }
+                else if(takenArr[22]===""){
+                    r4c2.src=('p1.svg')
+                    takenArr[22]="player1"
+                }
+                else if(takenArr[29]===""){
+                    r5c2.src=('p1.svg')
+                    takenArr[29]="player1"
+                }
+                else if(takenArr[36]==="") {
+                    r6c2.src=('p1.svg')
                     takenArr[36]="player1"
                 }
         
         
-    }
+             }
+
+             if(col3.includes(id)){
+        
+                if(takenArr[2]===""){
+                    r1c3.src=('p1.svg')
+                    takenArr[2]="player1"
+                    
+                }
+                else if(takenArr[9]===""){
+                    r2c3.src=('p1.svg')
+                    takenArr[9]="player1"
+                }
+                else if(takenArr[16]===""){
+                    r3c3.src=('p1.svg')
+                    takenArr[16]="player1"
+                }
+                else if(takenArr[23]===""){
+                    r4c3.src=('p1.svg')
+                    takenArr[23]="player1"
+                }
+                else if(takenArr[30]===""){
+                    r5c3.src=('p1.svg')
+                    takenArr[30]="player1"
+                }
+                else if(takenArr[37]==="") {
+                    r6c3.src=('p1.svg')
+                    takenArr[37]="player1"
+                }
+        
+        
+             }
+             
+             if(col4.includes(id)){
+        
+                if(takenArr[3]===""){
+                    r1c4.src=('p1.svg')
+                    takenArr[3]="player1"
+                    
+                }
+                else if(takenArr[10]===""){
+                    r2c4.src=('p1.svg')
+                    takenArr[10]="player1"
+                }
+                else if(takenArr[17]===""){
+                    r3c4.src=('p1.svg')
+                    takenArr[17]="player1"
+                }
+                else if(takenArr[24]===""){
+                    r4c4.src=('p1.svg')
+                    takenArr[24]="player1"
+                }
+                else if(takenArr[31]===""){
+                    r5c4.src=('p1.svg')
+                    takenArr[31]="player1"
+                }
+                else if(takenArr[38]==="") {
+                    r6c4.src=('p1.svg')
+                    takenArr[38]="player1"
+                }
+        
+        
+             }
+
+             if(col5.includes(id)){
+        
+                if(takenArr[4]===""){
+                    r1c5.src=('p1.svg')
+                    takenArr[4]="player1"
+                    
+                }
+                else if(takenArr[11]===""){
+                    r2c5.src=('p1.svg')
+                    takenArr[11]="player1"
+                }
+                else if(takenArr[18]===""){
+                    r3c5.src=('p1.svg')
+                    takenArr[18]="player1"
+                }
+                else if(takenArr[25]===""){
+                    r4c5.src=('p1.svg')
+                    takenArr[25]="player1"
+                }
+                else if(takenArr[32]===""){
+                    r5c5.src=('p1.svg')
+                    takenArr[32]="player1"
+                }
+                else if(takenArr[39]==="") {
+                    r6c5.src=('p1.svg')
+                    takenArr[39]="player1"
+                }
+        
+        
+             }
+
+             if(col6.includes(id)){
+        
+                if(takenArr[5]===""){
+                    r1c6.src=('p1.svg')
+                    takenArr[5]="player1"
+                    
+                }
+                else if(takenArr[12]===""){
+                    r2c6.src=('p1.svg')
+                    takenArr[12]="player1"
+                }
+                else if(takenArr[19]===""){
+                    r3c6.src=('p1.svg')
+                    takenArr[19]="player1"
+                }
+                else if(takenArr[26]===""){
+                    r4c6.src=('p1.svg')
+                    takenArr[26]="player1"
+                }
+                else if(takenArr[33]===""){
+                    r5c6.src=('p1.svg')
+                    takenArr[33]="player1"
+                }
+                else if(takenArr[40]==="") {
+                    r6c6.src=('p1.svg')
+                    takenArr[40]="player1"
+                }
+             }
+
+             if(col7.includes(id)){
+        
+                if(takenArr[6]===""){
+                    r1c7.src=('p1.svg')
+                    takenArr[6]="player1"
+                    
+                }
+                else if(takenArr[13]===""){
+                    r2c7.src=('p1.svg')
+                    takenArr[13]="player1"
+                }
+                else if(takenArr[20]===""){
+                    r3c7.src=('p1.svg')
+                    takenArr[20]="player1"
+                }
+                else if(takenArr[27]===""){
+                    r4c7.src=('p1.svg')
+                    takenArr[27]="player1"
+                }
+                else if(takenArr[34]===""){
+                    r5c7.src=('p1.svg')
+                    takenArr[34]="player1"
+                }
+                else if(takenArr[41]==="") {
+                    r6c7.src=('p1.svg')
+                    takenArr[41]="player1"
+                }
+        
+        
+             }
  
-    
+        // console.log(takenArr)
 
-    }
 
-    console.log(takenArr)
 
 }
 
 function updateToken2(id){
     
     let col1=['1','8','15','22','29','36']
-    let col2=[2,9,16,23,30,37]
-    let col3=[3,10,17,24,31,38]
-    let col4=[4,11,18,25,32,39]
-    let col5=[5,12,19,26,33,40]
-    let col6=[6,13,20,27,34,41]
-    let col7=[7,14,21,28,35,42]
+    let col2=['2','9','16','23','30','37']
+    let col3=['3','10','17','24','31','38']
+    let col4=['4','11','18','25','32','39']
+    let col5=['5','12','19','26','33','40']
+    let col6=['6','13','20','27','34','41']
+    let col7=['7','14','21','28','35','42']
 
-    console.log(takenArr)
+   
 
-    for(let i=1; i<43; i++){
+    if(col1.includes(id)){
         
-            if(col1.includes(id)){
-        
-                if(takenArr[0]===" "){
-                    r1c1.src=('p1.svg')
-                    takenArr[0]="player1"
-                }
-                else if(!takenArr[7]===" "){
-                    r2c1.src=('p1.svg')
-                    takenArr[7]="player1"
-                }
-                else if(!takenArr[14]===" "){
-                    r3c1.src=('p1.svg')
-                    takenArr[14]="player1"
-                }
-                else if(!takenArr[21]===" "){
-                    r4c1.src=('p1.svg')
-                    takenArr[21]="player1"
-                }
-                else if(!takenArr[28]===" "){
-                    r5c1.src=('p1.svg')
-                    takenArr[28]="player1"
-                }
-                else {
-                    r6c1.src=('p1.svg')
-                    takenArr[36]="player1"
-                }
-        
-        
-    }
- 
-    
+        if(takenArr[0]===""){
+            r1c1.src=('p2.svg')
+            takenArr[0]="player2"
+            
+        }
+        else if(takenArr[7]===""){
+            r2c1.src=('p2.svg')
+            takenArr[7]="player2"
+        }
+        else if(takenArr[14]===""){
+            r3c1.src=('p2.svg')
+            takenArr[14]="player2"
+        }
+        else if(takenArr[21]===""){
+            r4c1.src=('p2.svg')
+            takenArr[21]="player2"
+        }
+        else if(takenArr[28]===""){
+            r5c1.src=('p2.svg')
+            takenArr[28]="player2"
+        }
+        else if(takenArr[35]==="") {
+            r6c1.src=('p2.svg')
+            takenArr[35]="player2"
+        }
 
-    }
 
-    console.log(takenArr)
+     }
+
+     if(col2.includes(id)){
+
+        if(takenArr[1]===""){
+            r1c2.src=('p2.svg')
+            takenArr[1]="player2"
+            
+        }
+        else if(takenArr[8]===""){
+            r2c2.src=('p2.svg')
+            takenArr[8]="player2"
+        }
+        else if(takenArr[15]===""){
+            r3c2.src=('p2.svg')
+            takenArr[15]="player2"
+        }
+        else if(takenArr[22]===""){
+            r4c2.src=('p2.svg')
+            takenArr[22]="player2"
+        }
+        else if(takenArr[29]===""){
+            r5c2.src=('p2.svg')
+            takenArr[29]="player2"
+        }
+        else if(takenArr[36]==="") {
+            r6c2.src=('p2.svg')
+            takenArr[36]="player2"
+        }
+
+
+     }
+
+     if(col3.includes(id)){
+
+        if(takenArr[2]===""){
+            r1c3.src=('p2.svg')
+            takenArr[2]="player2"
+            
+        }
+        else if(takenArr[9]===""){
+            r2c3.src=('p2.svg')
+            takenArr[9]="player2"
+        }
+        else if(takenArr[16]===""){
+            r3c3.src=('p2.svg')
+            takenArr[16]="player2"
+        }
+        else if(takenArr[23]===""){
+            r4c3.src=('p2.svg')
+            takenArr[23]="player2"
+        }
+        else if(takenArr[30]===""){
+            r5c3.src=('p2.svg')
+            takenArr[30]="player2"
+        }
+        else if(takenArr[37]==="") {
+            r6c3.src=('p2.svg')
+            takenArr[37]="player2"
+        }
+
+
+     }
+     
+     if(col4.includes(id)){
+
+        if(takenArr[3]===""){
+            r1c4.src=('p2.svg')
+            takenArr[3]="player2"
+            
+        }
+        else if(takenArr[10]===""){
+            r2c4.src=('p2.svg')
+            takenArr[10]="player2"
+        }
+        else if(takenArr[17]===""){
+            r3c4.src=('p2.svg')
+            takenArr[17]="player2"
+        }
+        else if(takenArr[24]===""){
+            r4c4.src=('p2.svg')
+            takenArr[24]="player2"
+        }
+        else if(takenArr[31]===""){
+            r5c4.src=('p2.svg')
+            takenArr[31]="player2"
+        }
+        else if(takenArr[38]==="") {
+            r6c4.src=('p2.svg')
+            takenArr[38]="player2"
+        }
+
+
+     }
+
+     if(col5.includes(id)){
+
+        if(takenArr[4]===""){
+            r1c5.src=('p2.svg')
+            takenArr[4]="player2"
+            
+        }
+        else if(takenArr[11]===""){
+            r2c5.src=('p2.svg')
+            takenArr[11]="player2"
+        }
+        else if(takenArr[18]===""){
+            r3c5.src=('p2.svg')
+            takenArr[18]="player2"
+        }
+        else if(takenArr[25]===""){
+            r4c5.src=('p2.svg')
+            takenArr[25]="player2"
+        }
+        else if(takenArr[32]===""){
+            r5c5.src=('p2.svg')
+            takenArr[32]="player2"
+        }
+        else if(takenArr[39]==="") {
+            r6c5.src=('p2.svg')
+            takenArr[39]="player2"
+        }
+
+
+     }
+
+     if(col6.includes(id)){
+
+        if(takenArr[5]===""){
+            r1c6.src=('p2.svg')
+            takenArr[5]="player2"
+            
+        }
+        else if(takenArr[12]===""){
+            r2c6.src=('p2.svg')
+            takenArr[12]="player2"
+        }
+        else if(takenArr[19]===""){
+            r3c6.src=('p2.svg')
+            takenArr[19]="player2"
+        }
+        else if(takenArr[26]===""){
+            r4c6.src=('p2.svg')
+            takenArr[26]="player2"
+        }
+        else if(takenArr[33]===""){
+            r5c6.src=('p2.svg')
+            takenArr[33]="player2"
+        }
+        else if(takenArr[40]==="") {
+            r6c6.src=('p2.svg')
+            takenArr[40]="player2"
+        }
+     }
+
+     if(col7.includes(id)){
+
+        if(takenArr[6]===""){
+            r1c7.src=('p2.svg')
+            takenArr[6]="player2"
+            
+        }
+        else if(takenArr[13]===""){
+            r2c7.src=('p2.svg')
+            takenArr[13]="player2"
+        }
+        else if(takenArr[20]===""){
+            r3c7.src=('p2.svg')
+            takenArr[20]="player2"
+        }
+        else if(takenArr[27]===""){
+            r4c7.src=('p2.svg')
+            takenArr[27]="player2"
+        }
+        else if(takenArr[34]===""){
+            r5c7.src=('p2.svg')
+            takenArr[34]="player2"
+        }
+        else if(takenArr[41]==="") {
+            r6c7.src=('p2.svg')
+            takenArr[41]="player2"
+        }
+
+
+     }
+//    console.log(takenArr)
+
 
 
 }
 
-
-/**
-make player turn, then make two types of images one for player 1 and one for player 2, 
-then a function to check first empty circle in the column
-
-if the event.target.id was 1,8,15, 22, 29, 36 => then we will check if 36 is filled or not, if it is filled
-it will go to the one above it, if it is empty it will insert the token of the current player
- *///
-
-
- 
