@@ -7,7 +7,7 @@ gameboard.addEventListener('click', handleClick)
 let p1 = 'p1'
 let p2 = 'p2'
 let currentPlayer = p1
-let winner = null
+let winner = ""
 
 
 
@@ -60,6 +60,8 @@ function handleClick(event){
 
     // console.log(id)
     checkWinner(winningCombos,takenArr)
+ 
+   
  }
 
    
@@ -143,42 +145,172 @@ const winningCombos=[
 //console.log(winningCombos) --> 69 winning combos
 
 function checkWinner(winningCombos, takenArr){
-    let Arr1=[winningCombos[0]]; let Arr2=[winningCombos[1]]; let Arr3=[winningCombos[2]]; let Arr4=[winningCombos[3]]; let Arr5=[winningCombos[4]]; let Arr6=[winningCombos[5]]; let Arr7=[winningCombos[6]]; let Arr8=[winningCombos[7]]; ;let Arr9=[winningCombos[8]]; let Arr10=[winningCombos[9]]; let Arr11=[winningCombos[10]]; let Arr12=[winningCombos[11]]; let Arr13=[winningCombos[12]]; let Arr14=[winningCombos[13]]; let Arr15=[winningCombos[14]]; let Arr16=[winningCombos[15]]; ;let Arr17=[winningCombos[16]]; let Arr18=[winningCombos[17]]; let Arr19=[winningCombos[19]]; let Arr20=[winningCombos[19]]; let Arr21=[winningCombos[20]]; let Arr22=[winningCombos[21]]; let Arr23=[winningCombos[22]]; let Arr24=[winningCombos[23]]; ;let Arr25=[winningCombos[24]]; let Arr26=[winningCombos[26]]; let Arr27=[winningCombos[26]]; let Arr28=[winningCombos[27]]; let Arr29=[winningCombos[28]]; let Arr30=[winningCombos[29]]; let Arr31=[winningCombos[30]]; let Arr32=[winningCombos[31]];;let Arr33=[winningCombos[32]]; let Arr34=[winningCombos[33]]; let Arr35=[winningCombos[34]]; let Arr36=[winningCombos[35]]; let Arr37=[winningCombos[36]]; let Arr38=[winningCombos[37]]; let Arr39=[winningCombos[38]]; let Arr40=[winningCombos[39]]; ;let Arr41=[winningCombos[40]]; let Arr42=[winningCombos[41]]; let Arr43=[winningCombos[42]]; let Arr44=[winningCombos[43]]; let Arr45=[winningCombos[44]]; let Arr46=[winningCombos[45]]; let Arr47=[winningCombos[46]]; let Arr48=[winningCombos[47]]; ;let Arr49=[winningCombos[48]]; let Arr50=[winningCombos[49]]; let Arr51=[winningCombos[50]]; let Arr52=[winningCombos[51]]; let Arr53=[winningCombos[52]]; let Arr54=[winningCombos[53]]; let Arr55=[winningCombos[54]]; let Arr56=[winningCombos[55]]; ;let Arr57=[winningCombos[57]]; let Arr58=[winningCombos[57]]; let Arr59=[winningCombos[58]]; let Arr60=[winningCombos[59]]; let Arr61=[winningCombos[60]]; let Arr62=[winningCombos[61]]; let Arr63=[winningCombos[62]]; let Arr64=[winningCombos[63]]; ;let Arr65=[winningCombos[64]]; let Arr66=[winningCombos[65]]; let Arr67=[winningCombos[66]]; let Arr68=[winningCombos[67]]; let Arr69=[winningCombos[68]]
+    let Arr1=winningCombos[0]; let Arr2=winningCombos[1]; let Arr3=winningCombos[2]; let Arr4=winningCombos[3]; let Arr5=winningCombos[4]; let Arr6=winningCombos[5]; let Arr7=winningCombos[6]; let Arr8=winningCombos[7]; let Arr9=winningCombos[8]; let Arr10=winningCombos[9]; let Arr11=winningCombos[10]; let Arr12=winningCombos[11]; let Arr13=winningCombos[12]; let Arr14=winningCombos[13]; let Arr15=winningCombos[14]; let Arr16=winningCombos[15]; let Arr17=winningCombos[16]; let Arr18=winningCombos[17]; let Arr19=winningCombos[19]; let Arr20=winningCombos[19]; let Arr21=winningCombos[20]; let Arr22=winningCombos[21]; let Arr23=winningCombos[22]; let Arr24=winningCombos[23]; let Arr25=winningCombos[24]; let Arr26=winningCombos[26]; let Arr27=winningCombos[26]; let Arr28=winningCombos[27]; let Arr29=winningCombos[28]; let Arr30=winningCombos[29]; let Arr31=winningCombos[30]; let Arr32=winningCombos[31];let Arr33=winningCombos[32]; let Arr34=winningCombos[33]; let Arr35=winningCombos[34]; let Arr36=winningCombos[35]; let Arr37=winningCombos[36]; let Arr38=winningCombos[37]; let Arr39=winningCombos[38]; let Arr40=winningCombos[39] ;let Arr41=winningCombos[40]; let Arr42=winningCombos[41]; let Arr43=winningCombos[42]; let Arr44=winningCombos[43]; let Arr45=winningCombos[44]; let Arr46=winningCombos[45]; let Arr47=winningCombos[46]; let Arr48=winningCombos[47] ;let Arr49=winningCombos[48]; let Arr50=winningCombos[49]; let Arr51=winningCombos[50]; let Arr52=winningCombos[51]; let Arr53=winningCombos[52]; let Arr54=winningCombos[53]; let Arr55=winningCombos[54]; let Arr56=winningCombos[55] ;let Arr57=winningCombos[57]; let Arr58=winningCombos[57]; let Arr59=winningCombos[58]; let Arr60=winningCombos[59]; let Arr61=winningCombos[60]; let Arr62=winningCombos[61]; let Arr63=winningCombos[62]; let Arr64=winningCombos[63] ;let Arr65=winningCombos[64]; let Arr66=winningCombos[65]; let Arr67=winningCombos[66]; let Arr68=winningCombos[67]; let Arr69=[winningCombos[68]]
    
     // console.log(takenArr[firstArr[0]-1])
 
+    
     //row 1(starting from low)
+
     if(takenArr[(Arr1[0]-1)]=='player1' && takenArr[(Arr1[1]-1)]=='player1' && takenArr[(Arr1[2]-1)]=='player1' && takenArr[(Arr1[3]-1)]=='player1'){
-      winner='player1'
+    //   winner='player1'
+      console.log('player1')
      }
     else if(takenArr[(Arr2[0]-1)]=='player1' && takenArr[(Arr2[1]-1)]=='player1' && takenArr[(Arr2[2]-1)]=='player1' && takenArr[(Arr2[3]-1)]=='player1'){
-        winner='player1'
+        // winner='player1'
+        console.log('player1')
      }
 
     else if(takenArr[(Arr3[0]-1)]=='player1' && takenArr[(Arr3[1]-1)]=='player1' && takenArr[(Arr3[2]-1)]=='player1' && takenArr[(Arr3[3]-1)]=='player1'){
-        winner='player1'
+        // winner='player1'
+        console.log('player1')
     }
     
     else if(takenArr[(Arr4[0]-1)]=='player1' && takenArr[(Arr4[1]-1)]=='player1' && takenArr[(Arr4[2]-1)]=='player1' && takenArr[(Arr4[3]-1)]=='player1'){
-        winner='player1'
+        // winner='player1'
+        console.log('player1')
     }
     else if(takenArr[(Arr5[0]-1)]=='player1' && takenArr[(Arr5[1]-1)]=='player1' && takenArr[(Arr5[2]-1)]=='player1' && takenArr[(Arr5[3]-1)]=='player1'){
-        winner='player1'
+        // winner='player1'
+        console.log('player1')
     }
     else if(takenArr[(Arr6[0]-1)]=='player1' && takenArr[(Arr6[1]-1)]=='player1' && takenArr[(Arr6[2]-1)]=='player1' && takenArr[(Arr6[3]-1)]=='player1'){
-        winner='player1'
+        // winner='player1'
+        console.log('player1')
     }
     else if(takenArr[(Arr7[0]-1)]=='player1' && takenArr[(Arr7[1]-1)]=='player1' && takenArr[(Arr7[2]-1)]=='player1' && takenArr[(Arr7[3]-1)]=='player1'){
-        winner='player1'
+        // winner='player1'
+        console.log('player1')
     }
     else if(takenArr[(Arr8[0]-1)]=='player1' && takenArr[(Arr8[1]-1)]=='player1' && takenArr[(Arr8[2]-1)]=='player1' && takenArr[(Arr8[3]-1)]=='player1'){
-        winner='player1'
+        // winner='player1'
+        console.log('player1')
     }
 
 
-    return winner
 
+    //row 2(starting from low)
+
+    if(takenArr[(Arr9[0]-1)]=='player1' && takenArr[(Arr9[1]-1)]=='player1' && takenArr[(Arr9[2]-1)]=='player1' && takenArr[(Arr9[3]-1)]=='player1'){
+        winner='player1'
+       }
+      else if(takenArr[(Arr10[0]-1)]=='player1' && takenArr[(Arr10[1]-1)]=='player1' && takenArr[(Arr10[2]-1)]=='player1' && takenArr[(Arr10[3]-1)]=='player1'){
+          winner='player1'
+       }
+  
+      else if(takenArr[(Arr11[0]-1)]=='player1' && takenArr[(Arr11[1]-1)]=='player1' && takenArr[(Arr11[2]-1)]=='player1' && takenArr[(Arr11[3]-1)]=='player1'){
+          winner='player1'
+      }
+      
+      else if(takenArr[(Arr12[0]-1)]=='player1' && takenArr[(Arr12[1]-1)]=='player1' && takenArr[(Arr12[2]-1)]=='player1' && takenArr[(Arr12[3]-1)]=='player1'){
+          winner='player1'
+      }
+      else if(takenArr[(Arr13[0]-1)]=='player1' && takenArr[(Arr13[1]-1)]=='player1' && takenArr[(Arr13[2]-1)]=='player1' && takenArr[(Arr13[3]-1)]=='player1'){
+          winner='player1'
+      }
+      else if(takenArr[(Arr14[0]-1)]=='player1' && takenArr[(Arr14[1]-1)]=='player1' && takenArr[(Arr14[2]-1)]=='player1' && takenArr[(Arr14[3]-1)]=='player1'){
+          winner='player1'
+      }
+      else if(takenArr[(Arr15[0]-1)]=='player1' && takenArr[(Arr15[1]-1)]=='player1' && takenArr[(Arr15[2]-1)]=='player1' && takenArr[(Arr15[3]-1)]=='player1'){
+          winner='player1'
+      }
+      else if(takenArr[(Arr16[0]-1)]=='player1' && takenArr[(Arr16[1]-1)]=='player1' && takenArr[(Arr16[2]-1)]=='player1' && takenArr[(Arr16[3]-1)]=='player1'){
+          winner='player1'
+      }
+
+        //row 3(starting from low)
+
+    if(takenArr[(Arr17[0]-1)]=='player1' && takenArr[(Arr17[1]-1)]=='player1' && takenArr[(Arr17[2]-1)]=='player1' && takenArr[(Arr17[3]-1)]=='player1'){
+        winner='player1'
+       }
+      else if(takenArr[(Arr18[0]-1)]=='player1' && takenArr[(Arr18[1]-1)]=='player1' && takenArr[(Arr18[2]-1)]=='player1' && takenArr[(Arr18[3]-1)]=='player1'){
+          winner='player1'
+       }
+  
+      else if(takenArr[(Arr19[0]-1)]=='player1' && takenArr[(Arr19[1]-1)]=='player1' && takenArr[(Arr19[2]-1)]=='player1' && takenArr[(Arr19[3]-1)]=='player1'){
+          winner='player1'
+      }
+      
+      else if(takenArr[(Arr20[0]-1)]=='player1' && takenArr[(Arr20[1]-1)]=='player1' && takenArr[(Arr20[2]-1)]=='player1' && takenArr[(Arr20[3]-1)]=='player1'){
+          winner='player1'
+      }
+      else if(takenArr[(Arr21[0]-1)]=='player1' && takenArr[(Arr21[1]-1)]=='player1' && takenArr[(Arr21[2]-1)]=='player1' && takenArr[(Arr21[3]-1)]=='player1'){
+          winner='player1'
+      }
+      else if(takenArr[(Arr22[0]-1)]=='player1' && takenArr[(Arr22[1]-1)]=='player1' && takenArr[(Arr22[2]-1)]=='player1' && takenArr[(Arr22[3]-1)]=='player1'){
+          winner='player1'
+      }
+      else if(takenArr[(Arr23[0]-1)]=='player1' && takenArr[(Arr23[1]-1)]=='player1' && takenArr[(Arr23[2]-1)]=='player1' && takenArr[(Arr23[3]-1)]=='player1'){
+          winner='player1'
+      }
+      else if(takenArr[(Arr24[0]-1)]=='player1' && takenArr[(Arr24[1]-1)]=='player1' && takenArr[(Arr24[2]-1)]=='player1' && takenArr[(Arr24[3]-1)]=='player1'){
+          winner='player1'
+      }
+
+       //row 4(starting from low)
+
+    if(takenArr[(Arr25[0]-1)]=='player1' && takenArr[(Arr25[1]-1)]=='player1' && takenArr[(Arr25[2]-1)]=='player1' && takenArr[(Arr25[3]-1)]=='player1'){
+        winner='player1'
+       }
+      else if(takenArr[(Arr26[0]-1)]=='player1' && takenArr[(Arr26[1]-1)]=='player1' && takenArr[(Arr26[2]-1)]=='player1' && takenArr[(Arr26[3]-1)]=='player1'){
+          winner='player1'
+       }
+  
+      else if(takenArr[(Arr27[0]-1)]=='player1' && takenArr[(Arr27[1]-1)]=='player1' && takenArr[(Arr27[2]-1)]=='player1' && takenArr[(Arr27[3]-1)]=='player1'){
+          winner='player1'
+      }
+      
+      else if(takenArr[(Arr28[0]-1)]=='player1' && takenArr[(Arr28[1]-1)]=='player1' && takenArr[(Arr28[2]-1)]=='player1' && takenArr[(Arr28[3]-1)]=='player1'){
+          winner='player1'
+      }
+      else if(takenArr[(Arr29[0]-1)]=='player1' && takenArr[(Arr29[1]-1)]=='player1' && takenArr[(Arr29[2]-1)]=='player1' && takenArr[(Arr29[3]-1)]=='player1'){
+          winner='player1'
+      }
+      else if(takenArr[(Arr30[0]-1)]=='player1' && takenArr[(Arr30[1]-1)]=='player1' && takenArr[(Arr30[2]-1)]=='player1' && takenArr[(Arr30[3]-1)]=='player1'){
+          winner='player1'
+      }
+      else if(takenArr[(Arr31[0]-1)]=='player1' && takenArr[(Arr31[1]-1)]=='player1' && takenArr[(Arr31[2]-1)]=='player1' && takenArr[(Arr31[3]-1)]=='player1'){
+          winner='player1'
+      }
+      else if(takenArr[(Arr32[0]-1)]=='player1' && takenArr[(Arr32[1]-1)]=='player1' && takenArr[(Arr32[2]-1)]=='player1' && takenArr[(Arr32[3]-1)]=='player1'){
+          winner='player1'
+      }
+
+       //row 5(starting from low)
+
+    if(takenArr[(Arr33[0]-1)]=='player1' && takenArr[(Arr33[1]-1)]=='player1' && takenArr[(Arr33[2]-1)]=='player1' && takenArr[(Arr33[3]-1)]=='player1'){
+        winner='player1'
+       }
+      else if(takenArr[(Arr34[0]-1)]=='player1' && takenArr[(Arr34[1]-1)]=='player1' && takenArr[(Arr34[2]-1)]=='player1' && takenArr[(Arr34[3]-1)]=='player1'){
+          winner='player1'
+       }
+  
+      else if(takenArr[(Arr34[0]-1)]=='player1' && takenArr[(Arr34[1]-1)]=='player1' && takenArr[(Arr34[2]-1)]=='player1' && takenArr[(Arr34[3]-1)]=='player1'){
+          winner='player1'
+      }
+      
+      else if(takenArr[(Arr35[0]-1)]=='player1' && takenArr[(Arr35[1]-1)]=='player1' && takenArr[(Arr35[2]-1)]=='player1' && takenArr[(Arr35[3]-1)]=='player1'){
+          winner='player1'
+      }
+      else if(takenArr[(Arr36[0]-1)]=='player1' && takenArr[(Arr36[1]-1)]=='player1' && takenArr[(Arr36[2]-1)]=='player1' && takenArr[(Arr36[3]-1)]=='player1'){
+          winner='player1'
+      }
+      else if(takenArr[(Arr37[0]-1)]=='player1' && takenArr[(Arr7Arr370[1]-1)]=='player1' && takenArr[(Arr37[2]-1)]=='player1' && takenArr[(Arr37[3]-1)]=='player1'){
+          winner='player1'
+      }
+      else if(takenArr[(Arr38[0]-1)]=='player1' && takenArr[(Arr38[1]-1)]=='player1' && takenArr[(Arr38[2]-1)]=='player1' && takenArr[(Arr38[3]-1)]=='player1'){
+          winner='player1'
+      }
+      else if(takenArr[(Arr39[0]-1)]=='player1' && takenArr[(Arr39[1]-1)]=='player1' && takenArr[(Arr39[2]-1)]=='player1' && takenArr[(Arr39[3]-1)]=='player1'){
+          winner='player1'
+      }
+  
+  
+      
+  
 }
+
+
 
 //Changing the token
 
