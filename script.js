@@ -430,6 +430,265 @@ function checkWinner(winningCombos, takenArr){
         winner=p1
     }
 
+    if(takenArr[(Arr1[0]-1)]=='player2' && takenArr[(Arr1[1]-1)]=='player2' && takenArr[(Arr1[2]-1)]=='player2' && takenArr[(Arr1[3]-1)]=='player2'){
+        winner=p2
+       
+      }
+     else if(takenArr[(Arr2[0]-1)]=='player2' && takenArr[(Arr2[1]-1)]=='player2' && takenArr[(Arr2[2]-1)]=='player2' && takenArr[(Arr2[3]-1)]=='player2'){
+         winner=p2
+         
+      }
+ 
+     else if(takenArr[(Arr3[0]-1)]=='player2' && takenArr[(Arr3[1]-1)]=='player2' && takenArr[(Arr3[2]-1)]=='player2' && takenArr[(Arr3[3]-1)]=='player2'){
+         winner=p2
+         
+     }
+     
+     else if(takenArr[(Arr4[0]-1)]=='player2' && takenArr[(Arr4[1]-1)]=='player2' && takenArr[(Arr4[2]-1)]=='player2' && takenArr[(Arr4[3]-1)]=='player2'){
+         winner=p2
+         
+     }
+     else if(takenArr[(Arr5[0]-1)]=='player2' && takenArr[(Arr5[1]-1)]=='player2' && takenArr[(Arr5[2]-1)]=='player2' && takenArr[(Arr5[3]-1)]=='player2'){
+         winner=p2
+        
+     }
+     else if(takenArr[(Arr6[0]-1)]=='player2' && takenArr[(Arr6[1]-1)]=='player2' && takenArr[(Arr6[2]-1)]=='player2' && takenArr[(Arr6[3]-1)]=='player2'){
+         winner=p2
+       
+     }
+     else if(takenArr[(Arr7[0]-1)]=='player2' && takenArr[(Arr7[1]-1)]=='player2' && takenArr[(Arr7[2]-1)]=='player2' && takenArr[(Arr7[3]-1)]=='player2'){
+         winner=p2
+         
+     }
+     else if(takenArr[(Arr8[0]-1)]=='player2' && takenArr[(Arr8[1]-1)]=='player2' && takenArr[(Arr8[2]-1)]=='player2' && takenArr[(Arr8[3]-1)]=='player2'){
+         winner=p2
+        
+     }
+ 
+ 
+   
+ 
+     if(takenArr[(Arr9[0]-1)]=='player2' && takenArr[(Arr9[1]-1)]=='player2' && takenArr[(Arr9[2]-1)]=='player2' && takenArr[(Arr9[3]-1)]=='player2'){
+         winner=p2
+        }
+       else if(takenArr[(Arr10[0]-1)]=='player2' && takenArr[(Arr10[1]-1)]=='player2' && takenArr[(Arr10[2]-1)]=='player2' && takenArr[(Arr10[3]-1)]=='player2'){
+           winner=p2
+        }
+   
+       else if(takenArr[(Arr11[0]-1)]=='player2' && takenArr[(Arr11[1]-1)]=='player2' && takenArr[(Arr11[2]-1)]=='player2' && takenArr[(Arr11[3]-1)]=='player2'){
+           winner=p2
+       }
+       
+       else if(takenArr[(Arr12[0]-1)]=='player2' && takenArr[(Arr12[1]-1)]=='player2' && takenArr[(Arr12[2]-1)]=='player2' && takenArr[(Arr12[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr13[0]-1)]=='player2' && takenArr[(Arr13[1]-1)]=='player2' && takenArr[(Arr13[2]-1)]=='player2' && takenArr[(Arr13[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr14[0]-1)]=='player2' && takenArr[(Arr14[1]-1)]=='player2' && takenArr[(Arr14[2]-1)]=='player2' && takenArr[(Arr14[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr15[0]-1)]=='player2' && takenArr[(Arr15[1]-1)]=='player2' && takenArr[(Arr15[2]-1)]=='player2' && takenArr[(Arr15[3]-1)]=='player2'){
+           winner=p1
+       }
+       else if(takenArr[(Arr16[0]-1)]=='player2' && takenArr[(Arr16[1]-1)]=='player2' && takenArr[(Arr16[2]-1)]=='player2' && takenArr[(Arr16[3]-1)]=='player2'){
+           winner=p2
+       }
+ 
+  
+ 
+     if(takenArr[(Arr17[0]-1)]=='player2' && takenArr[(Arr17[1]-1)]=='player2' && takenArr[(Arr17[2]-1)]=='player2' && takenArr[(Arr17[3]-1)]=='player2'){
+         winner=p2
+        }
+       else if(takenArr[(Arr18[0]-1)]=='player2' && takenArr[(Arr18[1]-1)]=='player2' && takenArr[(Arr18[2]-1)]=='player2' && takenArr[(Arr18[3]-1)]=='player2'){
+           winner=p2
+        }
+   
+       else if(takenArr[(Arr19[0]-1)]=='player2' && takenArr[(Arr19[1]-1)]=='player2' && takenArr[(Arr19[2]-1)]=='player2' && takenArr[(Arr19[3]-1)]=='player2'){
+           winner=p2
+       }
+       
+       else if(takenArr[(Arr20[0]-1)]=='player2' && takenArr[(Arr20[1]-1)]=='player2' && takenArr[(Arr20[2]-1)]=='player2' && takenArr[(Arr20[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr21[0]-1)]=='player2' && takenArr[(Arr21[1]-1)]=='player2' && takenArr[(Arr21[2]-1)]=='player2' && takenArr[(Arr21[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr22[0]-1)]=='player2' && takenArr[(Arr22[1]-1)]=='player2' && takenArr[(Arr22[2]-1)]=='player2' && takenArr[(Arr22[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr23[0]-1)]=='player2' && takenArr[(Arr23[1]-1)]=='player2' && takenArr[(Arr23[2]-1)]=='player2' && takenArr[(Arr23[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr24[0]-1)]=='player2' && takenArr[(Arr24[1]-1)]=='player2' && takenArr[(Arr24[2]-1)]=='player2' && takenArr[(Arr24[3]-1)]=='player2'){
+           winner=p2
+       }
+ 
+        
+ 
+     if(takenArr[(Arr25[0]-1)]=='player2' && takenArr[(Arr25[1]-1)]=='player2' && takenArr[(Arr25[2]-1)]=='player2' && takenArr[(Arr25[3]-1)]=='player2'){
+         winner=p2
+        }
+       else if(takenArr[(Arr26[0]-1)]=='player2' && takenArr[(Arr26[1]-1)]=='player2' && takenArr[(Arr26[2]-1)]=='player2' && takenArr[(Arr26[3]-1)]=='player2'){
+           winner=p2
+        }
+   
+       else if(takenArr[(Arr27[0]-1)]=='player2' && takenArr[(Arr27[1]-1)]=='player2' && takenArr[(Arr27[2]-1)]=='player2' && takenArr[(Arr27[3]-1)]=='player2'){
+           winner=p2
+       }
+       
+       else if(takenArr[(Arr28[0]-1)]=='player2' && takenArr[(Arr28[1]-1)]=='player2' && takenArr[(Arr28[2]-1)]=='player2' && takenArr[(Arr28[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr29[0]-1)]=='player2' && takenArr[(Arr29[1]-1)]=='player2' && takenArr[(Arr29[2]-1)]=='player2' && takenArr[(Arr29[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr30[0]-1)]=='player2' && takenArr[(Arr30[1]-1)]=='player2' && takenArr[(Arr30[2]-1)]=='player2' && takenArr[(Arr30[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr31[0]-1)]=='player2' && takenArr[(Arr31[1]-1)]=='player2' && takenArr[(Arr31[2]-1)]=='player2' && takenArr[(Arr31[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr32[0]-1)]=='player2' && takenArr[(Arr32[1]-1)]=='player2' && takenArr[(Arr32[2]-1)]=='player2' && takenArr[(Arr32[3]-1)]=='player2'){
+           winner=p2
+       }
+ 
+       
+     if(takenArr[(Arr33[0]-1)]=='player2' && takenArr[(Arr33[1]-1)]=='player2' && takenArr[(Arr33[2]-1)]=='player2' && takenArr[(Arr33[3]-1)]=='player2'){
+         winner=p2
+        }
+       else if(takenArr[(Arr34[0]-1)]=='player2' && takenArr[(Arr34[1]-1)]=='player2' && takenArr[(Arr34[2]-1)]=='player2' && takenArr[(Arr34[3]-1)]=='player2'){
+           winner=p2
+        }
+   
+       else if(takenArr[(Arr34[0]-1)]=='player2' && takenArr[(Arr34[1]-1)]=='player2' && takenArr[(Arr34[2]-1)]=='player2' && takenArr[(Arr34[3]-1)]=='player2'){
+           winner=p2
+       }
+       
+       else if(takenArr[(Arr35[0]-1)]=='player2' && takenArr[(Arr35[1]-1)]=='player2' && takenArr[(Arr35[2]-1)]=='player2' && takenArr[(Arr35[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr36[0]-1)]=='player2' && takenArr[(Arr36[1]-1)]=='player2' && takenArr[(Arr36[2]-1)]=='player2' && takenArr[(Arr36[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr37[0]-1)]=='player2' && takenArr[(Arr37[1]-1)]=='player2' && takenArr[(Arr37[2]-1)]=='player2' && takenArr[(Arr37[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr38[0]-1)]=='player2' && takenArr[(Arr38[1]-1)]=='player2' && takenArr[(Arr38[2]-1)]=='player2' && takenArr[(Arr38[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr39[0]-1)]=='player2' && takenArr[(Arr39[1]-1)]=='player2' && takenArr[(Arr39[2]-1)]=='player2' && takenArr[(Arr39[3]-1)]=='player2'){
+           winner=p2
+       }
+   
+      
+ 
+       if(takenArr[(Arr40[0]-1)]=='player2' && takenArr[(Arr40[1]-1)]=='player2' && takenArr[(Arr40[2]-1)]=='player2' && takenArr[(Arr40[3]-1)]=='player2'){
+         winner=p2
+        }
+       else if(takenArr[(Arr41[0]-1)]=='player2' && takenArr[(Arr41[1]-1)]=='player2' && takenArr[(Arr41[2]-1)]=='player2' && takenArr[(Arr41[3]-1)]=='player2'){
+           winner=p2
+        }
+   
+       else if(takenArr[(Arr42[0]-1)]=='player2' && takenArr[(Arr42[1]-1)]=='player2' && takenArr[(Arr42[2]-1)]=='player2' && takenArr[(Arr42[3]-1)]=='player2'){
+           winner=p2
+       }
+       
+       else if(takenArr[(Arr43[0]-1)]=='player2' && takenArr[(Arr43[1]-1)]=='player2' && takenArr[(Arr43[2]-1)]=='player2' && takenArr[(Arr43[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr44[0]-1)]=='player2' && takenArr[(Arr44[1]-1)]=='player2' && takenArr[(Arr44[2]-1)]=='player2' && takenArr[(Arr44[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr45[0]-1)]=='player2' && takenArr[(Arr45[1]-1)]=='player2' && takenArr[(Arr45[2]-1)]=='player2' && takenArr[(Arr45[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr46[0]-1)]=='player2' && takenArr[(Arr46[1]-1)]=='player2' && takenArr[(Arr46[2]-1)]=='player2' && takenArr[(Arr46[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr47[0]-1)]=='player2' && takenArr[(Arr47[1]-1)]=='player2' && takenArr[(Arr47[2]-1)]=='player2' && takenArr[(Arr47[3]-1)]=='player2'){
+           winner=p2
+       }
+   
+       if(takenArr[(Arr48[0]-1)]=='player2' && takenArr[(Arr48[1]-1)]=='player2' && takenArr[(Arr48[2]-1)]=='player2' && takenArr[(Arr48[3]-1)]=='player2'){
+         winner=p2
+        }
+       else if(takenArr[(Arr49[0]-1)]=='player2' && takenArr[(Arr49[1]-1)]=='player2' && takenArr[(Arr49[2]-1)]=='player2' && takenArr[(Arr49[3]-1)]=='player2'){
+           winner=p2
+        }
+   
+       else if(takenArr[(Arr50[0]-1)]=='player2' && takenArr[(Arr50[1]-1)]=='player2' && takenArr[(Arr50[2]-1)]=='player2' && takenArr[(Arr50[3]-1)]=='player2'){
+           winner=p2
+       }
+       
+       else if(takenArr[(Arr51[0]-1)]=='player2' && takenArr[(Arr51[1]-1)]=='player2' && takenArr[(Arr51[2]-1)]=='player2' && takenArr[(Arr51[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr52[0]-1)]=='player2' && takenArr[(Arr52[1]-1)]=='player2' && takenArr[(Arr52[2]-1)]=='player2' && takenArr[(Arr52[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr53[0]-1)]=='player2' && takenArr[(Arr53[1]-1)]=='player2' && takenArr[(Arr53[2]-1)]=='player2' && takenArr[(Arr53[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr54[0]-1)]=='player2' && takenArr[(Arr54[1]-1)]=='player2' && takenArr[(Arr54[2]-1)]=='player2' && takenArr[(Arr54[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr55[0]-1)]=='player2' && takenArr[(Arr55[1]-1)]=='player2' && takenArr[(Arr55[2]-1)]=='player2' && takenArr[(Arr55[3]-1)]=='player2'){
+           winner=p2
+       }
+ 
+       if(takenArr[(Arr56[0]-1)]=='player2' && takenArr[(Arr56[1]-1)]=='player2' && takenArr[(Arr56[2]-1)]=='player2' && takenArr[(Arr56[3]-1)]=='player2'){
+         winner=p2
+        }
+       else if(takenArr[(Arr57[0]-1)]=='player2' && takenArr[(Arr57[1]-1)]=='player2' && takenArr[(Arr57[2]-1)]=='player2' && takenArr[(Arr57[3]-1)]=='player2'){
+           winner=p2
+        }
+   
+       else if(takenArr[(Arr58[0]-1)]=='player2' && takenArr[(Arr58[1]-1)]=='player2' && takenArr[(Arr58[2]-1)]=='player2' && takenArr[(Arr58[3]-1)]=='player2'){
+           winner=p2
+       }
+       
+       else if(takenArr[(Arr59[0]-1)]=='player2' && takenArr[(Arr59[1]-1)]=='player2' && takenArr[(Arr59[2]-1)]=='player2' && takenArr[(Arr59[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr60[0]-1)]=='player2' && takenArr[(Arr60[1]-1)]=='player2' && takenArr[(Arr60[2]-1)]=='player2' && takenArr[(Arr60[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr61[0]-1)]=='player2' && takenArr[(Arr61[1]-1)]=='player2' && takenArr[(Arr61[2]-1)]=='player2' && takenArr[(Arr61[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr61[0]-1)]=='player2' && takenArr[(Arr61[1]-1)]=='player2' && takenArr[(Arr61[2]-1)]=='player2' && takenArr[(Arr61[3]-1)]=='player2'){
+           winner=p2
+       }
+       else if(takenArr[(Arr62[0]-1)]=='player2' && takenArr[(Arr62[1]-1)]=='player2' && takenArr[(Arr62[2]-1)]=='player2' && takenArr[(Arr62[3]-1)]=='player2'){
+           winner=p2
+       }
+ 
+       else if(takenArr[(Arr63[0]-1)]=='player2' && takenArr[(Arr63[1]-1)]=='player2' && takenArr[(Arr63[2]-1)]=='player2' && takenArr[(Arr63[3]-1)]=='player2'){
+         winner=p2
+      }
+ 
+     else if(takenArr[(Arr64[0]-1)]=='player2' && takenArr[(Arr64[1]-1)]=='player2' && takenArr[(Arr64[2]-1)]=='player2' && takenArr[(Arr64[3]-1)]=='player2'){
+         winner=p2
+     }
+     
+     else if(takenArr[(Arr65[0]-1)]=='player2' && takenArr[(Arr65[1]-1)]=='player2' && takenArr[(Arr65[2]-1)]=='player2' && takenArr[(Arr65[3]-1)]=='player2'){
+         winner=p2
+     }
+     else if(takenArr[(Arr66[0]-1)]=='player2' && takenArr[(Arr66[1]-1)]=='player2' && takenArr[(Arr66[2]-1)]=='player2' && takenArr[(Arr66[3]-1)]=='player2'){
+         winner=p2
+     }
+     else if(takenArr[(Arr67[0]-1)]=='player2' && takenArr[(Arr67[1]-1)]=='player2' && takenArr[(Arr67[2]-1)]=='player2' && takenArr[(Arr67[3]-1)]=='player2'){
+         winner=p2
+     }
+     else if(takenArr[(Arr68[0]-1)]=='player2' && takenArr[(Arr68[1]-1)]=='player2' && takenArr[(Arr68[2]-1)]=='player2' && takenArr[(Arr68[3]-1)]=='player2'){
+         winner=p2
+     }
+     else if(takenArr[(Arr69[0]-1)]=='player2' && takenArr[(Arr69[1]-1)]=='player2' && takenArr[(Arr69[2]-1)]=='player2' && takenArr[(Arr69[3]-1)]=='player2'){
+         winner=p2
+     }
+ 
+
 
   
 }
@@ -912,7 +1171,7 @@ function reset(){
     }
     playerStat=p1
     currentPlayer=p1
-    winnerEnd=""
+    winnerEnd.innerHTML="Who will win?"
     winner=""
     
 
