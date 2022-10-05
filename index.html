@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
     <title>Connect Four</title>
 </head>
 <body>
 
-  <!-- <h2>Hogwarts Connect Four</h2> -->
+  <h1>Hogwarts Connect Four</h1>
+  <h2 id="pturn">Player 1</h2>
      <div class="gameboard">
+      
   
       <div class="gameboard-img">
         <img src="Gameboard.svg" alt="gameboard">
@@ -71,9 +76,11 @@
         </div>
         
       </div>
+      
+      <h2 id="winner"></h2>
 
-      <div><button>START</button></div>
-      <div><button>RESET</button></div>
+      
+      <div><button id="resetBtn">RESET</button></div>
 
      
 

@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Cinzel', serif;
+
 }
 body {
     background-image: url('zvGXkU.jpg');
@@ -11,7 +13,7 @@ body {
 
 .gameboard-img img{
     /* border:2px solid blue; */
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 18%;
     margin-right: auto;
     width: 50%;
@@ -22,7 +24,7 @@ body {
     position:relative;
     display: flex;
     flex-wrap: wrap;
-    margin-top: -490px;
+    margin-top: -520px;
     margin-left: 22%;
     width: 620px;
    
@@ -36,8 +38,27 @@ body {
 }
 
 
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    color:rgb(150, 170, 163);
+    font-size:50px;
+}
 
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color:rgb(5, 61, 41);
+    font-size: 40px;
+    
+}
 
+#resetBtn{
+    margin-top:30px;
+    margin-left:70%;
+    font-size:30px;
+    color:rgb(5, 61, 41)
+}
 
 
 
