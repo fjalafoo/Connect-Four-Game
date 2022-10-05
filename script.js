@@ -3,8 +3,10 @@
 let gameboard = document.querySelector('.circles')
 let playerStat = document.getElementById('pturn')
 let winnerEnd = document.getElementById('winner')
+let resetBtn = document.getElementById('resetBtn')
 
 gameboard.addEventListener('click', handleClick)
+resetBtn.addEventListener('click', reset)
 
 let p1 = 'Hogwarts'
 let p2 = 'Death Eaters'
@@ -69,8 +71,12 @@ function handleClick(event){
     checkWinner(winningCombos,takenArr)
  
     console.log(winner)
-    if(winner!=null){
-        winnerEnd.innerHTML=(`${winner} WINS!`)
+    if(winner!="" || winner==p1 || winner==p2){
+        winnerEnd.innerHTML=(`${winner} wins!`)
+        
+    }
+    else if(winner=""){
+        winnerEnd.innerHTML=(`Who will win?`)
     }
     
  
@@ -904,7 +910,11 @@ function reset(){
         let m=document.getElementById(i)
         m.src=('empty.svg')
     }
+    playerStat=p1
     currentPlayer=p1
-    winner=null
+    winnerEnd=""
+    winner=""
+    
+
 }
 
