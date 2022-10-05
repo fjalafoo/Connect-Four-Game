@@ -7,8 +7,9 @@ gameboard.addEventListener('click', handleClick)
 let p1 = 'p1'
 let p2 = 'p2'
 let currentPlayer = p1
+let winner = null
 
-let winArr=[]
+
 
 let takenArr=["","","","","","","",
 "","","","","","","",
@@ -22,20 +23,10 @@ let takenArr=["","","","","","","",
 
 //nested forloop rows and columns
 //first column
-let r1c1=document.getElementById('1')
-let r2c1=document.getElementById('8')
-let r3c1=document.getElementById('15')
-let r4c1=document.getElementById('22')
-let r5c1=document.getElementById('29')
-let r6c1=document.getElementById('36')
+let r1c1=document.getElementById('1');let r2c1=document.getElementById('8');let r3c1=document.getElementById('15');let r4c1=document.getElementById('22');let r5c1=document.getElementById('29');let r6c1=document.getElementById('36')
 
 //second column
-let r1c2=document.getElementById('2')
-let r2c2=document.getElementById('9')
-let r3c2=document.getElementById('16')
-let r4c2=document.getElementById('23')
-let r5c2=document.getElementById('30')
-let r6c2=document.getElementById('37')
+let r1c2=document.getElementById('2');let r2c2=document.getElementById('9');let r3c2=document.getElementById('16');let r4c2=document.getElementById('23');let r5c2=document.getElementById('30');let r6c2=document.getElementById('37')
 
 //third column
 let r1c3=document.getElementById('3')
@@ -95,7 +86,8 @@ function handleClick(event){
     }
 
     // console.log(id)
-    }
+    checkWinner(winningCombos,takenArr)
+ }
 
    
 
@@ -177,6 +169,50 @@ const winningCombos=[
 ]
 //console.log(winningCombos) --> 69 winning combos
 
+function checkWinner(winningCombos, takenArr){
+    let Arr1=[winningCombos[0]]; let Arr2=[winningCombos[1]]; let Arr3=[winningCombos[2]]; let Arr4=[winningCombos[3]]; let Arr5=[winningCombos[4]]; let Arr6=[winningCombos[5]]; let Arr7=[winningCombos[6]]; let Arr8=[winningCombos[7]]; 
+    let Arr9=[winningCombos[8]]; let Arr10=[winningCombos[9]]; let Arr11=[winningCombos[10]]; let Arr12=[winningCombos[11]]; let Arr13=[winningCombos[12]]; let Arr14=[winningCombos[13]]; let Arr15=[winningCombos[14]]; let Arr16=[winningCombos[15]]; 
+    let Arr17=[winningCombos[16]]; let Arr18=[winningCombos[17]]; let Arr19=[winningCombos[19]]; let Arr20=[winningCombos[19]]; let Arr21=[winningCombos[20]]; let Arr22=[winningCombos[21]]; let Arr23=[winningCombos[22]]; let Arr24=[winningCombos[23]]; 
+    let Arr25=[winningCombos[24]]; let Arr26=[winningCombos[26]]; let Arr27=[winningCombos[26]]; let Arr28=[winningCombos[27]]; let Arr29=[winningCombos[28]]; let Arr30=[winningCombos[29]]; let Arr31=[winningCombos[30]]; let Arr32=[winningCombos[31]];
+    let Arr33=[winningCombos[32]]; let Arr34=[winningCombos[33]]; let Arr35=[winningCombos[34]]; let Arr36=[winningCombos[35]]; let Arr37=[winningCombos[36]]; let Arr38=[winningCombos[37]]; let Arr39=[winningCombos[38]]; let Arr40=[winningCombos[39]]; 
+    let Arr41=[winningCombos[40]]; let Arr42=[winningCombos[41]]; let Arr43=[winningCombos[42]]; let Arr44=[winningCombos[43]]; let Arr45=[winningCombos[44]]; let Arr46=[winningCombos[45]]; let Arr47=[winningCombos[46]]; let Arr48=[winningCombos[47]]; 
+    let Arr49=[winningCombos[48]]; let Arr50=[winningCombos[49]]; let Arr51=[winningCombos[50]]; let Arr52=[winningCombos[51]]; let Arr53=[winningCombos[52]]; let Arr54=[winningCombos[53]]; let Arr55=[winningCombos[54]]; let Arr56=[winningCombos[55]]; 
+    let Arr57=[winningCombos[57]]; let Arr58=[winningCombos[57]]; let Arr59=[winningCombos[58]]; let Arr60=[winningCombos[59]]; let Arr61=[winningCombos[60]]; let Arr62=[winningCombos[61]]; let Arr63=[winningCombos[62]]; let Arr64=[winningCombos[63]]; 
+    let Arr65=[winningCombos[64]]; let Arr66=[winningCombos[65]]; let Arr67=[winningCombos[66]]; let Arr68=[winningCombos[67]]; let Arr69=[winningCombos[68]]
+   
+    // console.log(takenArr[firstArr[0]-1])
+
+    //row 1(starting from low)
+    if(takenArr[(Arr1[0]-1)]=='player1' && takenArr[(Arr1[1]-1)]=='player1' && takenArr[(Arr1[2]-1)]=='player1' && takenArr[(Arr1[3]-1)]=='player1'){
+      console.log("Winner is player 1")
+     }
+    else if(takenArr[(Arr2[0]-1)]=='player1' && takenArr[(Arr2[1]-1)]=='player1' && takenArr[(Arr2[2]-1)]=='player1' && takenArr[(Arr2[3]-1)]=='player1'){
+        console.log("Winner is player 1")
+     }
+
+    else if(takenArr[(Arr3[0]-1)]=='player1' && takenArr[(Arr3[1]-1)]=='player1' && takenArr[(Arr3[2]-1)]=='player1' && takenArr[(Arr3[3]-1)]=='player1'){
+        console.log("Winner is player 1")
+    }
+    
+    else if(takenArr[(Arr4[0]-1)]=='player1' && takenArr[(Arr4[1]-1)]=='player1' && takenArr[(Arr4[2]-1)]=='player1' && takenArr[(Arr4[3]-1)]=='player1'){
+        console.log("Winner is player 1")
+    }
+    else if(takenArr[(Arr5[0]-1)]=='player1' && takenArr[(Arr5[1]-1)]=='player1' && takenArr[(Arr5[2]-1)]=='player1' && takenArr[(Arr5[3]-1)]=='player1'){
+        console.log("Winner is player 1")
+    }
+    else if(takenArr[(Arr6[0]-1)]=='player1' && takenArr[(Arr6[1]-1)]=='player1' && takenArr[(Arr6[2]-1)]=='player1' && takenArr[(Arr6[3]-1)]=='player1'){
+        console.log("Winner is player 1")
+    }
+    else if(takenArr[(Arr7[0]-1)]=='player1' && takenArr[(Arr7[1]-1)]=='player1' && takenArr[(Arr7[2]-1)]=='player1' && takenArr[(Arr7[3]-1)]=='player1'){
+        console.log("Winner is player 1")
+    }
+    else if(takenArr[(Arr8[0]-1)]=='player1' && takenArr[(Arr8[1]-1)]=='player1' && takenArr[(Arr8[2]-1)]=='player1' && takenArr[(Arr8[3]-1)]=='player1'){
+        console.log("Winner is player 1")
+    }
+
+    return winner
+
+}
 
 //Changing the token
 
