@@ -73,6 +73,22 @@ function handleClick(event){
     console.log(winner)
     if(winner!="" || winner==p1 || winner==p2){
         winnerEnd.innerHTML=(`${winner} wins!`)
+
+        if(winner==p1){
+            for(let i=1;i<43;i++){
+                let m=document.getElementById(i)
+                m.src=('p1.svg')
+            }
+            playerStat.innerHTML=p1
+        }
+        if(winner==p2){
+            for(let i=1;i<43;i++){
+                let m=document.getElementById(i)
+                m.src=('p2.svg')
+            }
+            playerStat.innerHTML=p2
+        }
+
         
     }
     else if(winner=""){
