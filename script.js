@@ -1189,7 +1189,7 @@ function reset(){
     currentPlayer=p1
     winnerEnd.innerHTML="Who will win?"
     winner=""
-    takenArr=["","","","","","","",
+     takenArr=["","","","","","","",
     "","","","","","","",
     "","","","","","","",
     "","","","","","","",
