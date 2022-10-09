@@ -23,7 +23,7 @@ In my project I began with wireframes and pseudo code, here are some pictures of
 <img width="616" alt="wireframe5" src="https://user-images.githubusercontent.com/113799268/194769967-6ab6bf7b-3705-41d8-9dc9-f4618e6e5fa5.png">
 <img width="537" alt="wireframe6" src="https://user-images.githubusercontent.com/113799268/194769968-ae15a55f-d58e-4ac4-ae24-b936ea616554.png">
 
-My final project:
+# My final project:
 <img width="1439" alt="finalGame1" src="https://user-images.githubusercontent.com/113799268/194769988-bd6b265d-643f-45c6-ae1d-f0518c7b567e.png">
 <img width="1440" alt="finalGame2" src="https://user-images.githubusercontent.com/113799268/194769990-b4068e3c-0321-45af-b618-97c94a5fa92b.png">
 
