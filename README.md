@@ -3,7 +3,7 @@ GA: SEI-Unit 1: Project 1 - (Game: Connect Four)
 
 A Harry Potter themeed Connect Four Game, using HTML, CSS and JavaScript
 
-The link of the game (github link for now): https://github.com/fjalafoo/Connect-Four-Game
+The link of the game https://fjalafoo.github.io/Connect-Four-Game/
 
 # How to play:
 
